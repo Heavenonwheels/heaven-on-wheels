@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven On Wheels | Kashmir Travel & Tourism</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f7f7;
+    }
+
+    header {
+      background: #123d32;
+      color: white;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 15px;
+    }
+
+    nav {
+      background: #0b2c25;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 24px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 45px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: #123d32;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.1);
+    }
+
+    .card h3 {
+      color: #123d32;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #eaf4f0;
+      max-width: none;
+    }
+
+    footer {
+      background: #0b2c25;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Heaven On Wheels</h1>
+  <p>Kashmir Travel & Tourism</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#destinations">Destinations</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <h2>Discover the Paradise of Kashmir</h2>
+    <p>
+      Come to Kashmir. Travel in comfort, explore breathtaking valleys,
+      and live the dream with Heaven On Wheels.
+    </p>
+
+    <a class="btn" href="https://wa.me/" target="_blank">
+      💬 Contact on WhatsApp
+    </a>
+  </div>
+</section>
+
+<section id="destinations">
+  <h2>Explore Kashmir</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🏔️ Sonmarg</h3>
+      <p>Enjoy golden meadows, mountains, rivers and unforgettable views.</p>
+    </div>
+
+    <div class="card">
+      <h3>❄️ Gulmarg</h3>
+      <p>Experience snow, Gondola rides and the beautiful Himalayan scenery.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌲 Pahalgam</h3>
+      <p>Explore beautiful valleys, rivers and peaceful mountain landscapes.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌿 Doodhpathri</h3>
+      <p>A peaceful green valley surrounded by breathtaking mountains.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏞️ Gurez Valley</h3>
+      <p>Discover the remote beauty, villages and mountains of Gurez.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏔️ Ladakh</h3>
+      <p>Take an unforgettable journey through the high mountains of Ladakh.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Heaven On Wheels</h2>
+
+  <div class="about">
+    <p>
+      <strong>Heaven On Wheels</strong> is your trusted travel partner
+      for exploring the beauty of Kashmir and beyond.
+      We help you enjoy comfortable journeys, beautiful destinations
+      and memorable experiences.
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Plan Your Kashmir Trip</h2>
+
+  <p>
+    Ready to explore Kashmir?
+    Contact Heaven On Wheels and start planning your journey today.
+  </p>
+
+  <a class="btn" href="https://wa.me/" target="_blank">
+    📱 WhatsApp Us
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Heaven On Wheels</p>
+  <p>Kashmir Travel & Tourism</p>
+</footer>
+
+</body>
+</html>
