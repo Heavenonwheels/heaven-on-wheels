@@ -250,6 +250,38 @@
   <a class="btn" href="https://wa.me/919149942651" target="_blank">
     📱 WhatsApp Us
   </a>
+<h3 style="margin-top:30px;">📅 Book Your Kashmir Trip</h3>
+
+<form onsubmit="sendBooking(); return false;" style="max-width:600px; margin:20px auto; text-align:left;">
+
+  <input type="text" id="name" placeholder="Your Name" required
+  style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;">
+
+  <input type="tel" id="phone" placeholder="Phone Number" required
+  style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;">
+
+  <input type="date" id="date" required
+  style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;">
+
+  <select id="destination" required
+  style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;">
+    <option value="">Select Destination</option>
+    <option>Sonmarg</option>
+    <option>Gulmarg</option>
+    <option>Pahalgam</option>
+    <option>Doodhpathri</option>
+    <option>Gurez Valley</option>
+    <option>Ladakh</option>
+  </select>
+
+  <input type="number" id="passengers" placeholder="Number of Passengers" min="1" required
+  style="width:100%; padding:12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;">
+
+  <button type="submit" class="btn" style="border:none; cursor:pointer;">
+    🚕 Send Booking Request
+  </button>
+
+</form>
 </section>
 
 <footer>
@@ -259,5 +291,27 @@
 <p style="text-align:center; margin:20px;">
   📸 <a href="https://www.instagram.com/Kashmiri._adventure/" target="_blank">Follow us on Instagram</a>
 </p>
+<script>
+function sendBooking() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const date = document.getElementById("date").value;
+  const destination = document.getElementById("destination").value;
+  const passengers = document.getElementById("passengers").value;
+
+  const message =
+    "🚕 New Booking Request - Heaven On Wheels\n\n" +
+    "👤 Name: " + name + "\n" +
+    "📞 Phone: " + phone + "\n" +
+    "📅 Travel Date: " + date + "\n" +
+    "📍 Destination: " + destination + "\n" +
+    "👥 Passengers: " + passengers;
+
+  window.open(
+    "https://wa.me/919149942651?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+}
+</script>
 </body>
 </html>
